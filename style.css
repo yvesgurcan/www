@@ -277,7 +277,7 @@ section#code .background {
 }
 section#code .background code {
   margin-left: -150px;
-  margin-top: -90px;
+  margin-top: -40px;
   position: absolute;
   filter: blur(1.5px);
 }
@@ -355,73 +355,6 @@ section#javascript .content #technologies > div img {
   max-width: 110px;
   max-height: 60px;
   vertical-align: middle;
-}
-section#activity {
-  color: white;
-  max-width: 1290px;
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-}
-section#activity h4 {
-  padding-top: 30px;
-}
-section#activity h4 a {
-  color: white;
-}
-@media (max-width: 1329px) {
-  section#activity h4 {
-    text-align: center;
-  }
-}
-section#activity ul {
-  list-style-type: none;
-  padding: 0;
-}
-section#activity #social-wall {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-section#activity #social-wall-inner {
-  padding-bottom: 100px;
-}
-section#activity .event {
-  background: #a0a0a0;
-  padding: 20px;
-  margin: 15px;
-  width: 400px;
-  box-sizing: border-box;
-  flex-shrink: 0;
-}
-section#activity .event a {
-  color: #555555;
-}
-section#activity .event-inner {
-  display: flex;
-}
-section#activity .event-icon {
-  flex-shrink: 0;
-  margin-right: 10px;
-}
-section#activity .event-icon-inner {
-  width: 30px;
-}
-section#activity .event-details {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-height: 60px;
-}
-section#activity .event-title::first-letter {
-  text-transform: uppercase;
-}
-section#activity a.event-title {
-  color: unset;
-}
-section#activity .event-time {
-  font-style: italic;
-  font-size: 14px;
 }
 
 /*# sourceMappingURL=style.css.map */
