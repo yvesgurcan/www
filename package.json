@@ -1,11 +1,11 @@
 {
     "name": "yvesgurcan.com",
-    "description": "My personal website",
+    "description": "Yves Gurcan's personal website",
     "author": "Yves Gurcan",
-    "version": "1.2.1",
+    "version": "1.5.0",
     "repository": {
         "type": "git",
-        "url": "https://github.com/yvesgurcan/www.yvesgurcan.com.git"
+        "url": "https://github.com/yvesgurcan/www"
     },
     "scripts": {
         "start": "webpack-dev-server",
