@@ -9,6 +9,8 @@ header {
   flex-direction: column;
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
+  border-bottom: white 20px solid;
 }
 header #hero {
   background: rgba(255, 255, 255, 0.8);
@@ -113,21 +115,16 @@ section .overlay {
   }
 }
 section#about {
+  background: url("/assets/map.png") fixed;
+  background-size: cover;
   padding: 0;
   display: flex;
   flex-direction: column;
   color: white;
   overflow: hidden;
-  height: 110vh;
+  min-height: 95vh;
   justify-content: center;
   align-items: center;
-}
-section#about iframe {
-  height: 110vh;
-  border: 0;
-  width: 100vw;
-  z-index: 1;
-  position: absolute;
 }
 section#about .container {
   z-index: 2;
@@ -200,71 +197,71 @@ section#about .content img {
 section#about .ee {
   cursor: pointer;
 }
-section#code {
+section#values {
   background: #111;
   overflow: hidden;
   min-height: 90vh;
 }
-section#code .overlay {
+section#values .overlay {
   max-width: 850px;
   margin: auto;
 }
-section#code .overlay .row {
+section#values .overlay .row {
   display: flex;
 }
 @media (max-width: 900px) {
-  section#code .overlay .row {
+  section#values .overlay .row {
     display: block;
   }
 }
 @media (max-width: 650px) {
-  section#code .overlay .row {
+  section#values .overlay .row {
     display: block;
   }
 }
-section#code .overlay .row h4 {
-  padding-top: 45px;
+section#values .overlay .row h4 {
   margin: auto;
   text-align: left;
-  padding-right: 20px;
+  padding-right: 30px;
+  padding-left: 40px;
   flex-basis: 70%;
 }
 @media (max-width: 900px) {
-  section#code .overlay .row h4 {
+  section#values .overlay .row h4 {
     padding-right: 0;
   }
 }
 @media (max-width: 650px) {
-  section#code .overlay .row h4 {
+  section#values .overlay .row h4 {
     padding-right: 0;
   }
 }
-section#code .overlay .row:nth-child(2n) {
+section#values .overlay .row:nth-child(2n) {
   flex-direction: row-reverse;
 }
-section#code .overlay .row:nth-child(2n) h4 {
-  padding-left: 20px;
+section#values .overlay .row:nth-child(2n) h4 {
+  padding-left: 100px;
   padding-right: 0;
   flex-basis: 80%;
 }
 @media (max-width: 900px) {
-  section#code .overlay .row:nth-child(2n) h4 {
+  section#values .overlay .row:nth-child(2n) h4 {
     padding-left: 0;
   }
 }
 @media (max-width: 650px) {
-  section#code .overlay .row:nth-child(2n) h4 {
+  section#values .overlay .row:nth-child(2n) h4 {
     padding-left: 0;
   }
 }
-section#code .overlay .row:nth-child(3) h4 {
+section#values .overlay .row:nth-child(3) h4 {
   flex-basis: 70%;
 }
-section#code .overlay .row ul {
+section#values .overlay .row ul {
   list-style-type: none;
   padding-left: 0;
 }
-section#code .background {
+section#values .background {
   padding-top: 60px;
   max-width: 1100px;
   margin: auto;
@@ -275,86 +272,63 @@ section#code .background {
   transform: rotate(-1deg);
   user-select: none;
 }
-section#code .background code {
+section#values .background code {
   margin-left: -150px;
   margin-top: -40px;
   position: absolute;
   filter: blur(1.5px);
 }
 @media (max-width: 900px) {
-  section#code .background code {
+  section#values .background code {
     margin-left: -130px;
   }
 }
-section#code .background .comment-highlight {
+section#values .background .comment-highlight {
   color: green;
 }
-section#code .background .function-highlight {
+section#values .background .function-highlight {
   color: yellow;
 }
-section#code .background .variable-highlight {
+section#values .background .variable-highlight {
   color: lightskyblue;
 }
-section#code .background .keyword-highlight {
+section#values .background .keyword-highlight {
   color: royalblue;
 }
-section#code .background .statement-highlight {
+section#values .background .statement-highlight {
   color: magenta;
 }
-section#code .background .string-highlight {
+section#values .background .string-highlight {
   color: orange;
 }
-section#code .background .number-highlight {
+section#values .background .number-highlight {
   color: lime;
 }
-section#javascript {
+section#talks {
   background: white;
+  display: flex;
+  justify-content: center;
 }
-section#javascript .content {
+section#talks .content {
   max-width: 800px;
   margin: auto;
   padding-top: 60px;
 }
-section#javascript .content #stack {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+section#talks li {
+  margin-bottom: 15px;
 }
-section#javascript .content #stack b {
-  font-size: 18px;
-  margin-left: -20px;
-}
-section#javascript .content #technologies {
+section#pacman {
+  background: black;
+  height: 450px;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  margin-top: 10px;
 }
-@media (max-width: 650px) {
-  section#javascript .content #technologies {
-    display: block;
-  }
-}
-section#javascript .content #technologies > div {
-  margin: 5px;
-  padding: 20px;
-  background: rgba(230, 230, 230, 0.8);
-  border-radius: 5px;
-  z-index: 2;
-  position: relative;
-  text-align: center;
-  flex-grow: 1;
-}
-@media (max-width: 900px) {
-  section#javascript .content #technologies > div {
-    padding: 6px;
-  }
-}
-section#javascript .content #technologies > div img {
-  max-width: 110px;
-  max-height: 60px;
-  vertical-align: middle;
+section#pacman iframe {
+  overflow: hidden;
+  width: 600px;
+  height: 500px;
+  position: absolute;
+  border: none;
 }
 
 /*# sourceMappingURL=style.css.map */
