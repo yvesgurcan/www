@@ -9,7 +9,6 @@
     },
     "scripts": {
         "start": "webpack-dev-server",
-        "watch": "npm start",
         "compile:sass": "sass --watch style.scss:style.css shared.scss:shared.css"
     },
     "devDependencies": {
