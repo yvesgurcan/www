@@ -1,4 +1,4 @@
-Written from scratch in HTML, CSS/SASS, and a dash of JavaScript.
+Written from scratch with HTML and CSS/SASS.
 
 ### Development
 
@@ -7,10 +7,14 @@ Written from scratch in HTML, CSS/SASS, and a dash of JavaScript.
 
 This will run a webpack server with hot reload enabled.
 
+You can watch changes on the SASS stylesheet files to compile them dynamically:
+
+    npm style:watch
+
 ### Deployment
 
-The HTML and JavaScript do not need to be compiled. Pushing updates to the `master` branch will publish the new version via GitHub Pages.
+Pushing updates to the `master` branch will publish the new version via GitHub Pages.
 
-However, the stylesheets must be compiled from SASS to CSS. You can watch changes on the stylesheet files to compile them dynamically.
+The stylesheets must be compiled from SASS to CSS.
 
-    npm compile:sass
+    npm style:compile

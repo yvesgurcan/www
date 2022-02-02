@@ -7,17 +7,9 @@
     <link rel="stylesheet" href="shared.css?v1.2.3" type="text/css">
     <link rel="stylesheet" href="style.css?v1.5.0" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600" rel="stylesheet">
+    <link rel="icon" href="/assets/portrait.jpg">
   </head>
   <body>
-    <script src="getDurations.js?v1.2.1"></script>
-    <script type="text/javascript" src="scripts/moment-2.24.0.min.js"></script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-178459218-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-178459218-1');
-    </script>
     <nav id="menu">
       <h1>
         <a href="" class="desktop">yves<span class="suffix">gurcan</span></a>
@@ -26,7 +18,7 @@
           <div id="link-items">
             <a href="#about">Who</a>
             <a href="#values">Values</a>
-            <a href="#javascript">JavaScript</a>
+            <a href="#talks">Talks</a>
           </div>
         </div>
     </nav>
@@ -42,28 +34,27 @@
 
       <section id="about">
         <a name="about"></a>
-        <iframe id="map" src="https://www.google.com/maps/d/embed?mid=15jRgnMyTE2jaTPdA-wMGSGmMHvcOsgdR"></iframe>
         <div class="container">
-        <div>
-            <h4><a href="#about">Who's this guy?</a></h4>
-            <div class="content">
-          <div id="portrait">
-            <img alt="Yves Gurcan" src="assets/Y_Gurcan_SQ01.jpg?v1.1">
-          </div>
           <div>
-            <p>I am a <a href="https://www.linkedin.com/in/yvesgurcan/">senior software engineer</a> with <span id="years-of-professional-experience"></span> years of professional experience.</p>
-            <p>I founded <a href="https://parallel45.io">Parallel45</a>, a consulting agency based in Portland, OR.</p>
-            <p>Born and raised in France, I moved to the Pacific Northwest in 2014.</p>
-            <p>When I am not coding, you'll probably find me at the park with my <span id="age-of-amelie"></span> daughter, Amélie.</p>
-            <p>I am fascinated by <span class="ee" onClick="ee()">1994</span> videogame <a href="https://medium.com/@yvesgurcan/in-the-beginning-was-doom-83c67a3970f2">Doom II</a></span>.</p>
-          </div>
-          </div>
+              <h4><a href="#about">Who's this guy?</a></h4>
+              <div class="content">
+            <div id="portrait">
+              <img alt="Portrait of Yves Gurcan" src="assets/portrait.jpg">
+            </div>
+            <div>
+              <p>I'm an aspiring manager with a knack for empathetic communication and <a href="https://nobaproject.com/modules/emotional-intelligence" target="_blank">emotional intelligence</a>.</p>
+              <p>I am passionate about supporting the success of my clients, teammates, and employer.</p>
+              <p>I'm constantly looking for ways to do better and improve processes.</p>
+              <p>I’ve been recognized by previous supervisors as a natural teacher and a skilled programmer.</p>
+              <p>I strive to lead by example and follow the principles of <a href="https://positivepsychology.com/positive-leadership" target="_blank">positive leadership</a>.</p>
+            </div>
+            </div>
           </div>
         </div>
       </section>
 
       <a name="values"></a>
-      <section id="code">
+      <section id="values">
         <div>
           <pre class="background"><code>
             <span class="function-highlight">MovePlayer</span> = (<span class="variable-highlight">Direction</span>) => {
@@ -137,8 +128,7 @@
 
           <div class="overlay">
             <div class="row">
-            <a name="passionate"></a>
-              <h4><a href="#passionate">Passionate about code</a></h4>
+              <h4>Passionate about code</h4>
               <ul>
                 <li><b>Users first.</b> I believe that user experience should always be the priority.</li>
                 <li><b>Avid learner.</b> I enjoy learning new technologies and paradigms.</li>
@@ -147,57 +137,46 @@
             </div>
             
             <div class="row">
-              <a name="teamplayer"></a>
-              <h4><a href="#teamplayer">Team player</a></h4>
+              <h4>Team player</h4>
               <ul>
-                <li><b>Documentation.</b> I write and document code with the next developer in mind.</li>
                 <li><b>Strong communicator.</b> I tailor my discourse to fit my interlocutors' needs and role.</li>
-                <li><b>Organized.</b> I excel at keeping track of meetings, issues, and ideas.</li>
+                <li><b>Organized.</b> I excel at keeping track of priorities, meetings, issues, and ideas.</li>
+                <li><b>Documentation.</b> I write and document code with the next developer in mind.</li>
               </ul>
             </div>
             
             <div class="row">
-              <a name="responsible"></a>
-              <h4><a href="#responsible">Responsible</a></h4>
+              <h4>Professional</h4>
               <ul>
-                <li><b>Initiative.</b> I identify opportunities to ameliorate processes, communication, or refactor code.</li>
+                <li><b>Initiative.</b> I identify opportunities to ameliorate processes, communication, and experience.</li>
                 <li><b>Agile.</b> I am comfortable with iterative development and frequent pushes to production.</li>
                 <li><b>Autonomous.</b> I am in control of my workload and can manage small projects independently.</li>
               </ul>
             </div>
-            
           </div>
         </div>
 
       </section>
 
-      <section id="javascript">
-      <div class="content">
-        <h4><a href="#javascript">JavaScript all the things!</a></h4>
-        <p>I first learnt JavaScript about <span id="years-of-personal-experience"></span> years ago. Things have changed a lot since then! I've kept my knowledge up to date by adopting bleeding edge technologies and tools such as <code>webpack</code>, <code>npm</code>, and <code>git</code>. Since JavaScript is everywhere, my expertise allows me to be comfortable both on the front end and the back end.</p>
-        <div id="stack">
-        <b>My favorite stack:</b>
-        <ul>
-          <li>React and GraphQL</li>
-          <li>Node</li>
-          <li>AWS</li>
-        </ul>
+      <section id="talks">
+        <div class="content">
+          <h4><a href="#talks">Talks</a></h4>
+            <ul>
+              <li>January 20, 2022: <a href="http://www.youtube.com/watch?v=PY-r2T_tTXI&t=321">Polite PRs: Emotionally intelligent code reviews</a> at <a href="https://devetry.com" target="_blank">Devetry</a>.</li>
+              <li>September 5, 2020: <a href="https://www.youtube.com/watch?v=JvEyHokLnak&t=1695">Communication for developers</a> at <a href="https://the-collab-lab.codes/">The Collab Lab</a>.</li>
+              <li>May 19, 2020: <a href="https://www.youtube.com/watch?v=uN3a8r4qeZY&t=1112">Blue-Green Deployments and AWS SAM</a> at <a href="https://www.meetup.com/Portland-Serverless-Architecture-Meetup/">PDX Serverless</a>.</li>
+              <li>May 1, 2020: <a>Introduction to WebSockets</a> at <a href="https://www.meetup.com/front-end-small-talk/">Front End Small Talk</a>.</li>
+              <li>February 18, 2020: <a href="https://www.meetup.com/Portland-Serverless-Architecture-Meetup/events/268360327/">AWS CloudFormation: A stack in the sky</a> at <a href="https://www.meetup.com/Portland-Serverless-Architecture-Meetup/">PDX Serverless</a>.</li>
+              <li>January 16, 2020: <a href="https://www.meetup.com/front-end-small-talk/events/266240588/">Web Workers: Get off my thread!</a> at <a href="https://www.meetup.com/front-end-small-talk/">Front End Small Talk</a>.</li>
+              <li>November 20, 2019: <a href="https://www.youtube.com/watch?v=wjkUx7HR7NM&t=380">Web Workers Workshop</a> at <a href="https://www.meetup.com/Elm-Eug/events/">Funky Ducks Hack & Chat</a>.</li>
+              <li>October 11, 2019: <a href="https://www.meetup.com/Elm-Eug/events/qsrfjryznbpb/">Intro to Styled Components</a> at <a href="https://www.meetup.com/Elm-Eug/events/">Funky Ducks Hack & Chat</a>.</li>
+              <li>June 27, 2019: <a href="https://www.youtube.com/watch?v=Gzfux0xfwlY">Service Workers: Go offline or go home</a> at <a href="https://www.meetup.com/eugenewebdevs/">Eugene Web Devs</a>.</li>
+            </ul>
         </div>
-        <div id="technologies">
-          <div>
-            <img alt="React" title="React" src="assets/tech/react.png">
-            <img alt="GraphQL" title="GraphQL" src="assets/tech/graphql.png">
-          </div>
-          <div>
-            <img alt="Node" title="Node" src="assets/tech/node.png">
-          </div>
-          <div>
-              <img alt="API Gateway" title="API Gateway" src="assets/tech/apigateway.png">
-              <img alt="Lambda" title="Lambda" src="assets/tech/lambda.png">
-            <img alt="dynamoDB" title="dynamoDB" src="assets/tech/dynamodb.png">
-          </div>
-        </div>
-        </div>
+      </section>
+
+      <section id="pacman">
+        <iframe src="https://pacman.yvesgurcan.com"></iframe>
       </section>
 
       <footer>
@@ -205,10 +184,23 @@
         yves<span class="suffix">gurcan</span>.com</a>
       </footer>
 
-      <script type="text/javascript" src="scripts/GitHubEvent.js?1.2.1"></script>
       <script>
-        getDurations()
-      </script>
+        function ee() {
+          const now = new Date();
+          if (now.getMonth() !== 11) {
+            return;
+          }
 
+          if (now.getDate() !== 10) {
+            return;
+          }
+
+          const header = document.getElementsByTagName("header")[0]
+          console.log('oremor nhoj em llik tsum uoy emag eht niw ot')
+          header.style.backgroundImage = "url('/assets/doom.jpg')"
+        }
+
+        ee()
+      </script>
   </body>
 </html>

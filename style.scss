@@ -6,12 +6,14 @@ body {
 }
 
 header {
-    background: white;
+  background: white;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
+  border-bottom: white 20px solid;
 
   #hero {
     background: $overlay-background1;
@@ -123,22 +125,16 @@ section {
   }
 
   &#about {
+    background: url('/assets/map.png') fixed;
+    background-size: cover;
     padding: 0;
     display: flex;
     flex-direction: column;
     color: $invert-color;
     overflow: hidden;
-    height: 110vh;
+    min-height: 95vh;
     justify-content: center;
     align-items: center;
-
-    iframe {
-        height: 110vh;
-        border: 0;
-        width: 100vw;
-        z-index: 1;
-        position: absolute;
-      }
 
     .container {
         z-index: 2;
@@ -216,7 +212,7 @@ section {
 
   }
 
-  &#code {
+  &#values {
     background: $code-background;
     overflow: hidden;
     min-height: 90vh;
@@ -237,10 +233,10 @@ section {
         }
 
         h4 {
-            padding-top: 45px;
           margin: auto;
           text-align: left;
-          padding-right: 20px;
+          padding-right: 30px;
+          padding-left: 40px;
           flex-basis: 70%;
 
           @include breakpoint(medium) {
@@ -257,7 +253,7 @@ section {
           flex-direction: row-reverse;
 
           h4 {
-            padding-left: 20px;
+            padding-left: 100px;
             padding-right: 0;
             flex-basis: 80%;
 
@@ -343,61 +339,36 @@ section {
 
   }
 
-  &#javascript {
+  &#talks {
+    min-height: 100vh;
     background: white;
+    display: flex;
+    justify-content: center;
 
     .content {
     max-width: 800px;
     margin: auto;
     padding-top: 60px;
-
-    #stack {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        b {
-            font-size: 18px;
-            margin-left: -20px;
-        }
+ 
     }
 
-    #technologies {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-      margin-top: 10px;
-
-      @include breakpoint(small) {
-        display: block;
-      }
-
-      & > div {
-        margin: 5px;
-        padding: 20px;
-        background: $overlay-background2;
-        border-radius: $border-radius;
-        z-index: 2;
-        position: relative;
-        text-align: center;
-        flex-grow: 1;
-
-        @include breakpoint(medium) {
-          padding: 6px;
-        }
-
-        img {
-          max-width: 110px;
-          max-height: 60px;
-          vertical-align: middle;
-        }
+    li {
+      margin-bottom: 15px;
     }
-
-      }
-      
-    }
-
   }
 
+  &#pacman {
+    background: black;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+
+    iframe {
+      overflow: hidden;
+      width: 600px;
+      height: 500px;
+      position: absolute;
+      border: none;
+    }  
+  }
 }
